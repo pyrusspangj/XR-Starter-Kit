@@ -1,0 +1,23 @@
+import cv2
+
+def test_camera(index):
+    cap = cv2.VideoCapture(index)
+    if cap.isOpened():
+        print(f"Camera {index} opened successfully.")
+        while True:
+            ret, frame = cap.read()
+            if not ret:
+                print("Failed to capture a frame.")
+                break
+            cv2.imshow(f"Camera {index}", frame)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+        cap.release()
+        cv2.destroyAllWindows()
+    else:
+        print(f"Failed to open camera {index}.")
+
+# Test Camera 0
+test_camera(0)
+# Test Camera 1
+test_camera(1)

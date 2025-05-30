@@ -4,7 +4,7 @@ Version: Alpha 1.0
 How to use:
 
 Camera Calibration:
-	1) Travel to the `HandTracking/Camera Calibration` directory. There are two (2) Python programs within this directory: `getImages.py`, and `calibration.py`. 
+	1) Travel to the `Hand-Tracking/Camera-Calibration` directory. There are two (2) Python programs within this directory: `getImages.py`, and `calibration.py`. 
 	2) Run `getImages.py`. You will be prompted with a video feed of your camera, and terminal instructions on how to take a snapshot of a frame.
 		--- The next few steps are very important, so read carefully ---
 	3) Get a picture of a checkerboard (preferably black and white). It can be digital (on your phone or tablet) or physical (printed paper or actual checkerboard). 
@@ -20,7 +20,7 @@ Camera Calibration:
 		that means that the checkerboard pictures you took were insufficient & the program could not identify the checkerboard in any of them.
 	8) If instead you receive an output saying "SUCCESS! Camera metrics have been calculated.", then your camera has been calibrated.
 	9) You will receive an output stating the "total error" of your camera calibration. If this error is greater than `0.10`, restart the process from Step 1.\
-	10) All done! Confirm that `guided_calibraiton.yml` exists within the `Camera Calibration` directory. If so, continue.
+	10) All done! Confirm that `guided_calibraiton.yml` exists within the `Camera-Calibration` directory. If so, continue.
 	
 Hand Tracking:
 	1) Enter the directory which aligns with your system:

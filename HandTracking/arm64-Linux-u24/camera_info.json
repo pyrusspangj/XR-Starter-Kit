@@ -1,0 +1,19 @@
+{
+	
+	"setup": {
+		
+		"root": 0,
+		
+		"images": 2,
+		
+		"binocular": null,
+		
+		"fov": null,
+		
+		"distance": null,
+				
+		"rotation": null
+		
+	}
+
+}
